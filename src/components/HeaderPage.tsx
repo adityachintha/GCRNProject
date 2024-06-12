@@ -1,15 +1,16 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const HeaderPage = ()=> {
 
 
     return (
-        <View style = {styles.wrapper}>
+        <SafeAreaView style = {styles.wrapper}>
             <Text style = {styles.text}>
                 Header 
             </Text>
-        </View>
+        </SafeAreaView>
     )
 }
 

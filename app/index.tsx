@@ -1,18 +1,13 @@
 
 import BodyPage from "@/src/components/BodyPage";
 import HeaderPage from "@/src/components/HeaderPage";
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, StatusBar } from "react-native";
 
 export default function Index() {
   return (
-    // <View
-    //   style={{
-    //     flex: 1,
-    //     justifyContent: "center",
-    //     alignItems: "center",
-    //   }}
-    // >
+    
     <View style = {styles.container}>
+      <StatusBar hidden={true}/>
       <HeaderPage></HeaderPage>
       <BodyPage></BodyPage>
       
@@ -23,12 +18,12 @@ export default function Index() {
 const styles = StyleSheet.create ({
   container:{
       flex:1,
-      backgroundColor: "#fafafa",
+      backgroundColor: "#46288b",
       padding:10,
 
   },
   text:{
-      color:"#",
+      color:"#000",
       textAlign:"center",
   }
 })
